@@ -17,7 +17,7 @@ function down(){
 
 function toggledraw(){
 	md = false;
-	canvas.style.curcor="default";
+	canvas.style.cursor="default";
 }
 
 function getMousePos(canvas, evt){
@@ -31,7 +31,7 @@ function getMousePos(canvas, evt){
 function draw(canvas, posx, posy){
 	var context = canvas.getContext('2d');
 	if(md){
-		canvas.style.curcor="pointer";
-		context.fillRect(posx, posy, 4, 4);
+		canvas.style.cursor="pointer";
+		context.fillRect(posx, posy, size, size);
 	}
 }
